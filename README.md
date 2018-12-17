@@ -10,4 +10,4 @@ alias acsc='perl /usr/local/acsc/acsc.perl'
 
 ## Usage
 
-![](https://github.com/HaoDaWang/acsc/blob/master/doc/demo.gif)
+![](https://github.com/HaoDaWang/ACSC/blob/master/doc/tty.gif)
