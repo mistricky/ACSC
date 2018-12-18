@@ -19,7 +19,7 @@ sub color_print {
 sub executed_info {
   my ($output_msg) = @_;
 
-  if($output_msg =~ /^[Ee]rror/){
+  if($output_msg =~ /[Ee]rror/){
     color_print("red", $TRUE, $output_msg);
   } else {
     print "$output_msg";
@@ -44,7 +44,8 @@ sub executed_shell {
 my ($executedFile) = @ARGV;
 
 my @line = executed_shell("mcs $executedFile");
-traverse_info(@line);
+$result = traverse_info(@line);
+
 
 # xxx.cs to xxx.exe
 $executedFile =~ s/([^.]+)(?:\.[a-zA-Z]+)?/$1.exe/;
